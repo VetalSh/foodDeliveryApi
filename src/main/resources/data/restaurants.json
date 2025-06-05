@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Пицца плюс",
+    "deliveryTime": 50,
+    "rating": 4.5,
+    "minDeliveryAmount": 250.00,
+    "type": "Пицца",
+    "restImage": "rest-1.jpg"
+  },
+  {
+    "title": "Тануки",
+    "deliveryTime": 50,
+    "rating": 4.5,
+    "minDeliveryAmount": 100.00,
+    "type": "Пицца",
+    "restImage": "rest-2.jpg"
+  },
+  {
+    "title": "FoodBand",
+    "deliveryTime": 50,
+    "rating": 4.5,
+    "minDeliveryAmount": 500.00,
+    "type": "Пицца",
+    "restImage": "rest-3.jpg"
+  },
+  {
+    "title": "Жадина-пицца",
+    "deliveryTime": 50,
+    "rating": 4.5,
+    "minDeliveryAmount": 100.00,
+    "type": "Пицца",
+    "restImage": "rest-4.jpg"
+  },
+  {
+    "title": "Точка еды",
+    "deliveryTime": 50,
+    "rating": 4.5,
+    "minDeliveryAmount": 90.00,
+    "type": "Пицца",
+    "restImage": "rest-5.jpg"
+  },
+  {
+    "title": "PizzaBurger",
+    "deliveryTime": 50,
+    "rating": 4.5,
+    "minDeliveryAmount": 300.00,
+    "type": "Пицца",
+    "restImage": "rest-6.jpg"
+  }
+]
