@@ -8,10 +8,7 @@ import org.springframework.web.server.ResponseStatusException;
 @Getter
 public class FoodDeliveryException extends ResponseStatusException {
 
-    private final String transactionId;
-
-    public FoodDeliveryException(HttpStatus status, String reason) {
-        super(status, reason);
-        this.transactionId = MDC.get("transactionId");
+    public FoodDeliveryException(HttpStatus statusCode, String reason) {
+        super(statusCode, reason);
     }
 }

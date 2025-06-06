@@ -1,9 +1,9 @@
 package com.epam.FoodDeliveryApp.handler;
 
-import com.epam.FoodDeliveryApp.dto.ResponseWrapper;
-import com.epam.FoodDeliveryApp.exception.FoodDeliveryException;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import com.epam.FoodDeliveryApp.exception.DishesException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @Slf4j
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(FoodDeliveryException.class)
-    @ApiResponse(responseCode = "404", description = "Source not found")
-    public ResponseWrapper<Void> handleFoodDeliveryException(FoodDeliveryException ex) {
-        log.error("Not found error [{}]: {}", ex.getTransactionId(), ex.getMessage());
-        return ResponseWrapper.error(ex.getTransactionId(), ex.getMessage(), ex.getStatusCode().value());
+    @ExceptionHandler(DishesException.class)
+    public ResponseEntity<ErrorResponse> handleFoodDeliveryException(DishesException ex) {
+        log.error(ex.getMessage());
+        ErrorResponse response = new ErrorResponse(HttpStatus.NOT_FOUND, ex.getMessage());
+        return new ResponseEntity<>(response, ex.getStatusCode());
     }
 }
