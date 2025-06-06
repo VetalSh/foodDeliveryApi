@@ -1,4 +1,4 @@
-package com.epam.DeliveryFoodApp;
+package com.epam.FoodDeliveryApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

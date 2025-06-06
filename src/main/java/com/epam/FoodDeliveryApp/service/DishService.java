@@ -1,9 +1,7 @@
-package com.epam.DeliveryFoodApp.service;
+package com.epam.FoodDeliveryApp.service;
 
-import com.epam.DeliveryFoodApp.dto.RequestDishDTO;
-import com.epam.DeliveryFoodApp.model.Dish;
-
-import java.util.Optional;
+import com.epam.FoodDeliveryApp.dto.RequestDishDTO;
+import com.epam.FoodDeliveryApp.model.Dish;
 
 public interface DishService extends Service {
     Dish createDish(RequestDishDTO dto);

@@ -1,6 +1,6 @@
-package com.epam.DeliveryFoodApp.controller;
+package com.epam.FoodDeliveryApp.controller;
 
-import com.epam.DeliveryFoodApp.model.Dish;
+import com.epam.FoodDeliveryApp.model.Dish;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

@@ -1,8 +1,8 @@
-package com.epam.DeliveryFoodApp.controller.impl;
+package com.epam.FoodDeliveryApp.controller.impl;
 
-import com.epam.DeliveryFoodApp.controller.DishController;
-import com.epam.DeliveryFoodApp.model.Dish;
-import com.epam.DeliveryFoodApp.service.DishService;
+import com.epam.FoodDeliveryApp.controller.DishController;
+import com.epam.FoodDeliveryApp.model.Dish;
+import com.epam.FoodDeliveryApp.service.DishService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.epam.DeliveryFoodApp.model;
+package com.epam.FoodDeliveryApp.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;

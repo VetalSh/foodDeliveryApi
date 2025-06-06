@@ -1,6 +1,6 @@
-package com.epam.DeliveryFoodApp.repository;
+package com.epam.FoodDeliveryApp.repository;
 
-import com.epam.DeliveryFoodApp.model.Dish;
+import com.epam.FoodDeliveryApp.model.Dish;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

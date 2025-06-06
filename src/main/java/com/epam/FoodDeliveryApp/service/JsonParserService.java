@@ -1,9 +1,9 @@
-package com.epam.DeliveryFoodApp.service;
+package com.epam.FoodDeliveryApp.service;
 
-import com.epam.DeliveryFoodApp.model.Dish;
-import com.epam.DeliveryFoodApp.model.Restaurant;
-import com.epam.DeliveryFoodApp.repository.DishRepository;
-import com.epam.DeliveryFoodApp.repository.RestaurantRepository;
+import com.epam.FoodDeliveryApp.model.Dish;
+import com.epam.FoodDeliveryApp.model.Restaurant;
+import com.epam.FoodDeliveryApp.repository.DishRepository;
+import com.epam.FoodDeliveryApp.repository.RestaurantRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

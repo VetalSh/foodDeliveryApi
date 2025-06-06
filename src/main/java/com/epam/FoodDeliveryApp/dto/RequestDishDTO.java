@@ -1,4 +1,4 @@
-package com.epam.DeliveryFoodApp.dto;
+package com.epam.FoodDeliveryApp.dto;
 
 import jakarta.validation.constraints.NotBlank;
 

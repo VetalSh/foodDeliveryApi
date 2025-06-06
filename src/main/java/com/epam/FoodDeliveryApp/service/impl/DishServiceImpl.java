@@ -1,16 +1,15 @@
-package com.epam.DeliveryFoodApp.service.impl;
+package com.epam.FoodDeliveryApp.service.impl;
 
-import com.epam.DeliveryFoodApp.dto.RequestDishDTO;
-import com.epam.DeliveryFoodApp.mapper.DishMapper;
-import com.epam.DeliveryFoodApp.model.Dish;
-import com.epam.DeliveryFoodApp.repository.DishRepository;
-import com.epam.DeliveryFoodApp.service.DishService;
+import com.epam.FoodDeliveryApp.dto.RequestDishDTO;
+import com.epam.FoodDeliveryApp.exception.DishesException;
+import com.epam.FoodDeliveryApp.mapper.DishMapper;
+import com.epam.FoodDeliveryApp.model.Dish;
+import com.epam.FoodDeliveryApp.repository.DishRepository;
+import com.epam.FoodDeliveryApp.service.DishService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Service
 @Slf4j
@@ -37,7 +36,7 @@ public class DishServiceImpl implements DishService {
     @Transactional(readOnly = true)
     public Dish findDishByTitle(String title) {
         Dish dish = dishRepository.findDishByTitle(title)
-                .orElseThrow(() -> new IllegalArgumentException("Dish with title: " + title + " not found"));
+                .orElseThrow(() -> new DishesException(title));
         log.info("Dish with title: " + dish.getTitle() + " was found");
         return dish;
     }

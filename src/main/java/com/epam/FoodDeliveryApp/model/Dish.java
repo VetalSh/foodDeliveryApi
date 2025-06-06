@@ -1,4 +1,4 @@
-package com.epam.DeliveryFoodApp.model;
+package com.epam.FoodDeliveryApp.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

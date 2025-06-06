@@ -1,7 +1,7 @@
-package com.epam.DeliveryFoodApp.mapper;
+package com.epam.FoodDeliveryApp.mapper;
 
-import com.epam.DeliveryFoodApp.dto.RequestDishDTO;
-import com.epam.DeliveryFoodApp.model.Dish;
+import com.epam.FoodDeliveryApp.dto.RequestDishDTO;
+import com.epam.FoodDeliveryApp.model.Dish;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
